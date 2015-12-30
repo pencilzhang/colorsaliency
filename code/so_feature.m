@@ -21,8 +21,8 @@ for ss = 1:length(temp_img)
 %     end
     imscr = im * 2 -1;
     
-    so = computeSO(imscr, cfilters, numChannel, numOrient, numPhase);
-    infomap_SO{ss} = csNorm_so(so,k,sigma,numChannel);
+    sofeat = computeSO(imscr, cfilters, numChannel, numOrient, numPhase);
+    infomap_SO{ss} = csNorm_so(sofeat,k,sigma,numChannel);
 end
 
 
