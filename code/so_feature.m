@@ -13,12 +13,12 @@ RF_siz = 25;
 
 infomap_SO = cell(length(temp_img),1);
 for ss = 1:length(temp_img)
-    img = temp_img{ss};
-    if max(img(:))>1
-        im = double(img)/255;
-    else
-        im = img;
-    end
+    im = temp_img{ss};
+%     if max(img(:))>1
+%         im = double(img)/255;
+%     else
+%         im = img;
+%     end
     imscr = im * 2 -1;
     
     so = computeSO(imscr, cfilters, numChannel, numOrient, numPhase);
