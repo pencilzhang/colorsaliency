@@ -1,0 +1,13 @@
+function p = make_Params()
+p = {};
+p.blurfrac = 0.020;
+p.salmapmaxsize =64;
+p.verbose = 0;
+p.levels = [2 3 4];              
+p.multilevels = [];
+p.sigma_frac_act = 0.25;
+p.tol = .0001;
+p.cyclic_type = 2;
+p.activationType = 1;
+p.num_iters = 1;
+p.algtype =3;
